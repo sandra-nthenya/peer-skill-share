@@ -1,5 +1,7 @@
 
 import SignUpSteps from "@/components/SignUpSteps";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -9,10 +11,13 @@ const Index = () => {
           <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
             Skill Exchange Platform
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
             Connect with professionals, share your expertise, and grow your skills
             through peer-to-peer learning.
           </p>
+          <Button asChild>
+            <Link to="/skill-matching">Find Learning Partners</Link>
+          </Button>
         </div>
         <SignUpSteps />
       </div>
