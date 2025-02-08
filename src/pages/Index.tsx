@@ -1,6 +1,5 @@
 
 import Navigation from "@/components/Navigation";
-import SignUpSteps from "@/components/SignUpSteps";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Users2, Brain, Calendar } from "lucide-react";
@@ -58,12 +57,6 @@ const Index = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* How It Works Section */}
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
-        <SignUpSteps />
       </div>
     </div>
   );
