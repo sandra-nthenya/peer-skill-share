@@ -19,7 +19,7 @@ const Index = () => {
             Connect with professionals, share your expertise, and accelerate your learning through peer-to-peer skill exchange.
           </p>
           <Button asChild size="lg" className="text-lg">
-            <Link to="/sign-up" className="gap-2">
+            <Link to="/sign-in" className="gap-2">
               Get Started <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>
