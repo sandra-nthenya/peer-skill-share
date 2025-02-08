@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Star, UserCheck } from "lucide-react";
-import type { MatchFiltersType } from "@/pages/SkillMatching";
+import type { MatchFilters } from "@/pages/SkillMatching";
 import { toast } from "@/components/ui/use-toast";
 
 // Mock data for demonstration
@@ -42,7 +42,7 @@ const mockMatches = [
 ];
 
 interface MatchSuggestionsProps {
-  filters: MatchFiltersType;
+  filters: MatchFilters;
 }
 
 const MatchSuggestions = ({ filters }: MatchSuggestionsProps) => {
