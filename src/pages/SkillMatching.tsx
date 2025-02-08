@@ -5,7 +5,7 @@ import MatchFilters from "@/components/MatchFilters";
 import MatchSuggestions from "@/components/MatchSuggestions";
 import { toast } from "@/components/ui/use-toast";
 
-export type MatchFilters = {
+export type MatchFiltersType = {
   skillToLearn: string;
   industry: string;
   experienceLevel: string;
@@ -13,14 +13,14 @@ export type MatchFilters = {
 };
 
 const SkillMatching = () => {
-  const [filters, setFilters] = useState<MatchFilters>({
+  const [filters, setFilters] = useState<MatchFiltersType>({
     skillToLearn: "",
     industry: "",
     experienceLevel: "",
     availability: "weekdays",
   });
 
-  const handleFilterChange = (newFilters: MatchFilters) => {
+  const handleFilterChange = (newFilters: MatchFiltersType) => {
     setFilters(newFilters);
     toast({
       title: "Filters updated",
