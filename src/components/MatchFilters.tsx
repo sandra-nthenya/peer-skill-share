@@ -9,11 +9,11 @@ import {
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { skillOptions, industryOptions, experienceLevels } from "@/constants/skills";
-import type { MatchFilters } from "@/pages/SkillMatching";
+import type { MatchFiltersType } from "@/pages/SkillMatching";
 
 interface MatchFiltersProps {
-  filters: MatchFilters;
-  onFilterChange: (filters: MatchFilters) => void;
+  filters: MatchFiltersType;
+  onFilterChange: (filters: MatchFiltersType) => void;
 }
 
 const MatchFilters = ({ filters, onFilterChange }: MatchFiltersProps) => {
@@ -23,7 +23,7 @@ const MatchFilters = ({ filters, onFilterChange }: MatchFiltersProps) => {
     onFilterChange(localFilters);
   }, [localFilters, onFilterChange]);
 
-  const handleFilterChange = (key: keyof MatchFilters, value: string) => {
+  const handleFilterChange = (key: keyof MatchFiltersType, value: string) => {
     setLocalFilters((prev) => ({ ...prev, [key]: value }));
   };
 
