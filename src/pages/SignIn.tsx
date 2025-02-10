@@ -21,7 +21,7 @@ const SignIn = () => {
       title: "Success!",
       description: "You have successfully signed in.",
     });
-    navigate("/skill-matching");
+    navigate("/dashboard");
   };
 
   return (
